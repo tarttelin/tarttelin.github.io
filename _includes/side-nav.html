@@ -1,0 +1,26 @@
+<div id="sidebar" class="well sidebar-nav">
+    {% for c in site.collections %}
+    <h5><i class="glyphicon glyphicon-{{ c[1].icon }}"></i>
+        <small><b>{{ c[1].display }}</b></small>
+    </h5>
+    <ul class="nav nav-pills nav-stacked">
+        {% assign section_url = "/index.html" | prepend: c[1].label | prepend: "/" %}
+        {% if page.url == section_url %}
+            <li class="active"><a href="{{ section_url}}">Overview</a></li>
+        {% else %}
+            <li><a href="/{{ c[1].label }}/">Overview</a></li>
+        {% endif %}
+    {% for subpage in c[1].docs] %}
+    {% if subpage.path contains '/index.md' %}
+    {% else %}
+        {% assign link_url = subpage.url | prepend: site.baseurl %}
+        {% if link_url == page.url %}
+        <li class="active"><a href="{{ link_url }}">{{ subpage.title }}</a></li>
+        {% else %}
+        <li><a href="{{ link_url }}">{{ subpage.title }}</a></li>
+        {% endif %}
+    {% endif %}
+    {% endfor %}
+    </ul>
+    {% endfor %}
+</div>

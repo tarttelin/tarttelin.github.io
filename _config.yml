@@ -1,0 +1,22 @@
+# Site settings
+title: Tarttelin Family
+email: freya@tarttelin.co.uk
+description: > # this means to ignore newlines until "baseurl:"
+  All about the Tarttelin Family
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://tarttelin.github.io" # the base hostname & protocol for your site
+twitter_username: pyrub
+github_username:  tarttelin
+
+# Build settings
+markdown: redcarpet
+
+collections: 
+  wildlife:
+    output: true
+    display: Wildlife around Deans Farm
+    icon: transfer
+  saskcow:
+    output: true
+    display: Saskcow Games
+    icon: repeat
