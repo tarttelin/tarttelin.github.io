@@ -14,8 +14,12 @@ collections:
   wildlife:
     output: true
     display: Wildlife around Deans Farm
-    icon: transfer
+    icon: tree-deciduous
   saskcow:
     output: true
     display: Saskcow Games
-    icon: repeat
+    icon: knight
+  freya:
+    output: true
+    display: random projects
+    icon: wrench
