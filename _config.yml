@@ -8,7 +8,7 @@ twitter_username: pyruby
 github_username:  tarttelin
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 
 collections: 
   wildlife:
